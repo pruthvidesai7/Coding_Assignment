@@ -23,3 +23,6 @@ create table incontact(
     constraint fk_incontact_userId foreign key(user_id) references users(id),
     constraint fk_incontact_globalId foreign key(global_id) references global(id)
 );
+
+ALTER TABLE incontact
+ADD CONSTRAINT uc_user_global UNIQUE (user_id, global_id);

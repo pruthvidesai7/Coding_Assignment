@@ -80,7 +80,7 @@ function Login(){
                     </div>
                     <div>
                         <label>Password</label>
-                        <input type="password" placeholder="Email" onChange={handlePasswordChange}></input>
+                        <input type="password" placeholder="Password" onChange={handlePasswordChange}></input>
                     </div>
                     <div>
                         <button type="submit">Login</button>
